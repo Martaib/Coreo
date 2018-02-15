@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*directiva general para todos los tags de eliminaciÃƒÂ³n de mÃƒÂ¡rgenes y paddings por defecto*/
+*
+{
+	margin:0px;
+	padding:0px;
+}
+body {
+	background: #f2f2f2;
+	font-size: 16px;
+}
+
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: Courier Prime Code;
+}
+
+.menu-wrap {
+	width: 90%;
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-wrap .logo {
+	display:inline-block;
+	margin-right: 1em;
+	align-items: center;
+}
+
+.menu-wrap .logo img {
+	vertical-align: top;
+	
+}
+
+.menu-wrap .btn-menu{
+	display: none;
+	color:#fff;	
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.menu-wrap .logo:hover {
+	/*background: #fff;*/
+}
+
+.menu-wrap .enlaces {
+	display: inline-block;/*para que este uno al lado del otro*/
+	text-align: right;
+}
+.menu-wrap .enlaces a {
+	color:#fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em;
+	text-align: center;
+	font-size: 1em;
+}
+
+.menu-wrap .enlaces i {
+	margin-right: 5px; /*icono hamburguesa*/
+}
+
+.menu-wrap .enlaces a:hover {
+	background: #f2f2f2;
+	color:#4357ad;
+}
+
+main {
+	width: 100%;
+	background-color: #010117;
+	color: white;
+	padding-top: 148px;
+	height: auto;
+	padding-top: 100px;
+}
+
+.main-wrap {
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	align-items: center;	   
+}
+
+.main-right {
+	padding: 20px;
+}
+
+.foto {
+	width: 100%;
+}
+.title {
+	padding: 0px 20px 5px;
+	font-size: 26px;
+	line-height: 1.2;
+	font-family: play;
+}
+
+.claim {
+    padding: 0px 20px 20px;
+    max-width: 379px;
+    font-size: 12px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.main-button {
+	padding: 0px 20px 20px;
+}
+
+.button { 
+ 	display: inline-block;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	padding: 7px 6px;
+ 	border: none;
+ 	border-radius: 20px;
+ 	background: linear-gradient(to right, rgba(91,157,149,0.5), rgba(44,43,90,1));
+ 	font-family: 'Exo', sans-serif;
+ 	font-size: 10px;
+ 	color: #ffffff;
+ 	text-decoration: none;
+}
+
+.How-it-works {
+	background: linear-gradient(to right, rgba(91,157,149,0.5), rgba(44,43,90,1)) ;
+	color: white;
+}
+
+.How-it-works-wrap {
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	align-items: center;
+
+}
+
+.How-it-works hr {
+	max-width: 20px;
+	margin: 0px 0px 10px 20px;
+}
+
+.computer-video {
+	margin: 20px 0px 10px 20px;
+	width:446px;
+	height:341px;
+	text-align:center;
+	background:url('../images/Apple_Thunderbolt_Display.png')
+
+}
+
+.computer-video iframe {
+	width:410px;
+	height:230px;
+	top:20px;
+	position:relative;
+}
+
+.powerful-layout {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 300px;
+}
+
+.powerful-layout-wrap {
+	width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    align-items: center;
+}
+
+.Powerful-Layout hr {
+	max-width: 20px;
+	margin: 0px 0px 10px 20px;
+}
+
+.features {
+	color: white;
+	background: linear-gradient(to right, rgba(91,157,149,0.5), rgba(44,43,90,1)),url('../images/light-trails-PRU2QJT.jpg'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.features-wrap {
+
+    justify-content: space-around;
+}
+
+.features h1 {
+	text-align:center;
+}
+.features-photo{
+	padding:20px;
+}
+
+.Get-in-touch {
+    width: 100%;
+    padding: 20px;
+}
+
+.Get-in-touch-wrap {
+	width: 90%;
+	max-width: 1800px;
+	margin: auto;  
+	align-items: flex-start;
+    text-align: center;
+}
+
+.Get-in-touch h1 {
+	text-align:center;
+}
+
+.Get-in-touch hr {
+	margin-top: 18px;
+    margin: auto;
+    max-width: 48px;
+}
+
+.input-group label {
+
+  display: block;
+  margin:;
+ 
+}
+
+.input-group input {
+  display: block;
+  border: 0px;
+  border-bottom: 1px solid black;
+  width: 100px;	
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map {
+	background-image:url(../images/map.jpeg);
+	background-color: rgba(0, 0, 0, 0.60);
+	background-blend-mode: multiply;
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-family:Merriweather;
+	font-size: 22px;
+	height: 384px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.map-button {
+ 	display: inline-block;
+ 	padding: 8px 22px;
+ 	border: 1px solid #0197ba;
+ 	border-radius: 8px;
+ 	background-color: rgba(0, 0, 0, 0);
+ 	opacity: 1;
+ 	font: 20px consolas;
+ 	color:white;
+ 	text-decoration: none;
+}
+
+.main-footer {
+	background: linear-gradient(to right, rgba(91,157,149,0.5), rgba(44,43,90,1)),url('../images/light-trails-PRU2QJT.jpg'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 384px;
+}
+
+.main-footer-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-footer-nav_title {
+	display: block;
+    font-weight: 400;
+    color: #7d818e;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+ 	
+@media (min-width: 600px) {
+	.menu-wrap {
+		width:100%;
+    	display: flex;
+    	max-width: 1100px;
+    	margin: 0 auto;
+	}
+	.logo {
+		
+		padding:20px;
+    	
+	}
+	header nav {
+		flex: 0 0 50%
+    }
+	.main-wrap {
+		max-width: 1100px;
+    	display: flex;
+		justify-content: space-between;
+	}
+	.main .main-wrap {
+		flex: 1 1 30%
+	}
+	.main-right {
+		order:2;
+	}
+	.foto {
+		width: 400px;
+	}
+	.How-it-works-wrap {
+		display: flex;
+		justify-content: space-around;	
+	}
+	.How-it-works-right {
+		margin-left: 140px;
+		flex: 0 0 50%;
+		order:2;
+	}
+	.computer-video {
+		margin-left: 0px;
+		background-repeat: no-repeat;
+	    background-size: cover;
+		flex: 0	0 50%;
+	}
+	.Powerful-Layout-wrap {
+		display: flex;
+		justify-content: space-between;
+
+	}
+	.Powerful-Layout-right {
+
+		display: flex;
+	}
+	.Powerful-Layout-foto {
+		justify-content: center;
+	}
+	.features-wrap {
+		display: flex;
+	}
+	.features-photo {
+		order: 1;
+	}
+	.features-left {
+		order:-1;
+	}
+	.features-right {
+		order:1;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	header .menu-wrap {
+		flex-direction: row;
+	}
+
+	header .menu-wrap .logo {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width:100%;
+		padding: 1em;
+	}
+	header .menu-wrap .logo .btn-menu {
+		display: inline-block;
+	}
+
+	header .menu-wrap .enlaces {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+
+}
